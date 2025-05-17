@@ -8,7 +8,7 @@ This file contains IaC that creates:
 /* The following lines create an IAM role to be assumed by Github Actions workflows.
 OIDC allows secure, short-lived access to AWS without storing credentials.*/
 resource "aws_iam_role" "github_oidc_role" {
-  name = "${var.github_account_id}/${var.github_repo}"
+  name = "${var.github_repo}"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -43,7 +43,7 @@ resource "aws_iam_role_policy" "s3_deploy_policy" {
 }
 
 
-/* The following lines set up an OIDC for secure access to AWS from Github workflows.*/
+/* Uncoment the following lines to set up an OIDC for secure access to AWS from Github workflows.*/
 # data "tls_certificate" "github" {
 #   url = "https://token.actions.githubusercontent.com/.well-known/openid-configuration"
 # }
