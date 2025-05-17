@@ -8,7 +8,7 @@ This file contains IaC that creates:
 /* The following lines create an IAM role to be assumed by Github Actions workflows.
 OIDC allows secure, short-lived access to AWS without storing credentials.*/
 resource "aws_iam_role" "github_oidc_role" {
-  name = "GithubActionsRole"
+  name = "${var.github_account_id}/${var.github_repo}"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
@@ -44,12 +44,12 @@ resource "aws_iam_role_policy" "s3_deploy_policy" {
 
 
 /* The following lines set up an OIDC for secure access to AWS from Github workflows.*/
-data "tls_certificate" "github" {
-  url = "https://token.actions.githubusercontent.com/.well-known/openid-configuration"
-}
+# data "tls_certificate" "github" {
+#   url = "https://token.actions.githubusercontent.com/.well-known/openid-configuration"
+# }
 
-resource "aws_iam_openid_connect_provider" "github" {
-  url             = "https://token.actions.githubusercontent.com"
-  thumbprint_list = ["6938fd4d98bab03faadb97b34396831e3780aea1", "1c58a3a8518e8759bf075b76b750d4f2df264fcd"]
-  client_id_list  = ["sts.amazonaws.com"]
-}
+# resource "aws_iam_openid_connect_provider" "github" {
+#   url             = "https://token.actions.githubusercontent.com"
+#   thumbprint_list = ["6938fd4d98bab03faadb97b34396831e3780aea1", "1c58a3a8518e8759bf075b76b750d4f2df264fcd"]
+#   client_id_list  = ["sts.amazonaws.com"]
+# } 
