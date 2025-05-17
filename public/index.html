@@ -1,41 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Everything is Working!</title>
-  <style>
-    body {
-      background-color: #f4f4f4;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      text-align: center;
-      background: white;
-      padding: 2rem 3rem;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #2c7a7b;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      color: #4a5568;
-      font-size: 1.1rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>✅ Everything is working!</h1>
-    <p>Your static site infrastructure is up and running.</p>
-  </div>
-</body>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <div class="logo">
+        <img class="logo" src="assets/logo/logo.png" alt="Mãos à Obra">
+      </div>
+      <div class="nav-menu">
+        <a class="nav-item" href="#hero">sobre nós</a>
+        <a class="nav-item" href="#projects">projetos</a>
+        <a class="nav-item" href="#services">serviços</a>
+        <a class="nav-item" href="#footer">contato</a>
+      </div>
+    </nav>
+    <section id="hero">
+      <div class="banner" id="top-banner">
+        <p class="banner-text">
+          Uma equipe completa para <b>sua obra</b> com
+        </p>
+        <h1 class="banner-text">
+          <b>QUALIDADE<br>EXPERIÊNCIA<br>SEGURANÇA</b>
+        </h1>
+        <a class="banner-button" href="#footer">entrar em contato</a>
+      </div>
+      <div class="banner" id="side-banner">
+      </div>
+      <div class="banner" id="bottom-banner">
+        <h2 class="banner-text"><b>SEU ESPAÇO</b> DO <b>SEU JEITO</b></h2>
+        <p class="banner-text">
+          <b>Mãos à Obra</b> é a solução completa para você renovar, melhorar ou construir seu espaço <b>sem complicação</b>!
+        </p>
+      </div>
+    </section>
+    <section id="services">
+      <h1 class="text">NOSSOS SERVIÇOS</h1>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/photos/service-image-roof.webp" alt="Imagem de um emadeiramento de telhado">
+          </div>
+          <div class="card-text">
+            <h2 class="text">ESPECIALISTA EM TELHADOS</h2>
+            <ul class="list">
+              <li class="list-item">Construção e reforma de telhados</li>
+              <li class="list-item">Impermeabilização</li>
+              <li class="list-item">Instalação e manutenção de calhas</li>
+              <li class="list-item">Trabalhos de carpintaria</li>
+            </ul>
+            <a href="" class="more-button">+ saiba mais</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/photos/service-image-remodel.webp" alt="Imagem de um emadeiramento de telhado">
+          </div>
+          <div class="card-text">
+            <h2 class="text">REFORMA E CONSTRUÇÃO</h2>
+            <ul class="list">
+              <li class="list-item">Reformas completas</li>
+              <li class="list-item">Alvenaria</li>
+              <li class="list-item">Instalação de pisos</li>
+              <li class="list-item">Pintura</li>
+            </ul>
+            <a href="" class="more-button">+ saiba mais</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/photos/service-image-repairs.webp" alt="Imagem de um emadeiramento de telhado">
+          </div>
+          <div class="card-text">
+            <h2 class="text">REPAROS E INSTALAÇÕES</h2>
+            <ul class="list">
+              <li class="list-item">Pintura e impermeabilização</li>
+              <li class="list-item">Serviços elétricos</li>
+              <li class="list-item">Serviços hidráulicos</li>
+              <li class="list-item">Instalação de eletrodomésticos</li>
+            </ul>
+            <a href="" class="more-button">+ saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bottom-wrapper">
+      <section id="cta-section">
+        <div class="banner">
+          <h3 class="banner-text">AGENDE UMA <b>VISITA GRÁTIS</b> DE UM <b>ESPECIALISTA</b></h3>
+          <a href="" class="banner-button">solicitar orçamento</a>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <div class="footer-content">
+        <h4 class="footer-text">Av. Dr. Altair Martins- Gramado, Cotia - SP - 06710-040 </h4>
+        <h4 class="footer-text">(11) 93039-3157</h4>
+        <div class="footer-icons">
+          <img class="icon" src="assets/icons/instagram-icon.png" alt="">
+          <img class="icon" src="assets/icons/whatsapp-icon.png" alt="">
+        </div>
+      </div>
+      <div class="logo">
+        <img class="logo" src="assets/logo/logo.png" alt="">
+      </div>
+
+
+    </footer>
+    <!-- <section id="projects">
+      <div class="projects-content">
+        <div class="projects-text">
+          <h2>Projetos</h2>
+        </div>
+        <div class="image-grid">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+          <img src="assets/photos/long-shot-man-working-roof.jpg" alt="">
+        </div>
+      </div>
+    </section> -->
+
+  </body>
 </html>
