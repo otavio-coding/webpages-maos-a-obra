@@ -3,22 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Name</title>
+    <title>Mãos a Obra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
   </head>
   <body>
     <nav id="nav-bar">
       <div class="logo">
         <img class="logo" src="assets/logo/logo.png" alt="Mãos à Obra">
       </div>
-      <div class="nav-menu">
-        <a class="nav-item" href="#hero">sobre nós</a>
+      <div class="desktop-nav">
+        <a class="nav-item" href="">sobre nós</a>
         <a class="nav-item" href="#projects">projetos</a>
         <a class="nav-item" href="#services">serviços</a>
         <a class="nav-item" href="#footer">contato</a>
+      </div>
+      <div class="hamburger-nav">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">sobre nós</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">projetos</a></li>
+          <li><a href="#services" onclick="toggleMenu()">serviços</a></li>
+          <li><a href="#footer" onclick="toggleMenu()">contato</a></li>
+        </ul>
       </div>
     </nav>
     <section id="hero">
@@ -131,6 +145,6 @@
         </div>
       </div>
     </section> -->
-
+  <script src="js/script.js"></script>
   </body>
 </html>

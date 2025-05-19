@@ -1,0 +1,17 @@
+@media screen and (max-width: 1200px) {
+  div.desktop-nav {
+    display: none;
+  }
+  div.hamburger-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    --margin: 44px;
+  }
+  #nav-bar .logo {
+    width: 90px;
+  }
+}
