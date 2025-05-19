@@ -7,7 +7,6 @@ html {
   --light-color: #fffded;
   --dark-gray: #534747;
   --dark-gray: #6b6060;
-
 }
 
 body{
@@ -47,14 +46,17 @@ nav#nav-bar {
 
 img.logo {
   width: 144px;
-  height: 59px;
+  height: auto;
   align-self: center;
   overflow-clip-margin: unset;
 
-
 }
 
-div.nav-menu{
+.logo:hover {
+  cursor: pointer;
+}
+
+div.desktop-nav{
   width: fit-content;
   height: fit-content;
   box-sizing: border-box;
@@ -89,7 +91,90 @@ a.nav-item:last-child {
   border-radius: 145px;
 }
 
-/* HERO SECTION*/
+
+/* HAMBURGER NAV */
+
+div.hamburger-nav {
+  display: none;
+  margin-inline: 90px;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-color);
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-color: var(--dark-gray);
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 25px;
+  font-size: 18px;
+  text-align: center;
+  color: var(--light-color);
+  text-decoration: none;
+  transition: all 2.0 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 369px;
+  margin-block: 0px;
+}
+
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+/* HERO SECTION */
 
 section#hero {
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05) ), url("../assets/photos/roof-under-construction.webp");
@@ -156,7 +241,6 @@ h3.banner-text {
   font-weight: 300;
   font-size: 40px;
   margin-bottom: 10px;
-
 }
 
 p.banner-text {
@@ -165,7 +249,6 @@ p.banner-text {
   margin-block: 0px;
   color: #fffaface;
   text-justify: distribute;
-
 }
 
 a.banner-button {
@@ -225,7 +308,6 @@ ul.list {
   font-weight: 400;
   margin-block-start: 0px;
   margin-block-end: 13px;
-
 }
 
 div.cards-container {
