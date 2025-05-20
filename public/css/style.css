@@ -37,7 +37,7 @@ h1 b, h2 b {
 
 /* NAVIGATION MENU */
 nav#nav-bar {
-  height: 90px;
+  height: 10vh;
   padding-block: 5px;
   padding-inline-start: var(--margin);
   display: flex;
@@ -126,7 +126,7 @@ div.hamburger-nav {
 
 .menu-links {
   position: absolute;
-  top: 100px;
+  top: 10vh;
   right: 0;
   background-color: var(--dark-gray);
   width: 100%;
@@ -218,7 +218,7 @@ div.banner {
 
 .banner#bottom-banner {
   width: 616px;
-  height: 235px;
+  height: fit-content;
 
 }
 
@@ -252,7 +252,6 @@ p.banner-text {
   font-size: 0.33em;
   margin-block: 0px;
   color: #fffaface;
-  text-justify: distribute;
 }
 
 a.banner-button {
@@ -265,7 +264,7 @@ a.banner-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2vw;
+  margin-top: 5vh;
   text-decoration: none;
   border: solid 2px var(--light-color);
   border-radius: 30px;
