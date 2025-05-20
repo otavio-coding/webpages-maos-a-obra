@@ -5,6 +5,10 @@
   div.hamburger-nav {
     display: flex;
   }
+
+  div.banner {
+  font-size: 44px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -13,5 +17,24 @@
   }
   #nav-bar .logo {
     width: 90px;
+  }
+  section#hero{
+    justify-content: space-between;
+  }
+
+  div.banner {
+    width: 100%;
+    font-size: 32px;
+    padding-block: 40px;
+  }
+  #top-banner {
+    background-color: rgba(41, 1, 1, 0.397);
+  }
+  #side-banner {
+    display: none;
+  }
+  
+  .banner-text {
+    text-align: center;
   }
 }
