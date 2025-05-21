@@ -249,14 +249,16 @@ h3.banner-text {
 
 p.banner-text {
   font-family: 'Roboto Serif', serif;
-  font-size: 0.33em;
+  font-size: 0.4em;
   margin-block: 0px;
   color: #fffaface;
 }
 
 a.banner-button {
-  padding: 1vw;
-  font-size: 0.375em;
+  width: fit-content;
+  padding-inline: 1.3em;
+  line-height: 55px;
+  font-size: 0.45em;
   color: var(--dark-red);
   background-color: var(--light-color);
   font-weight: 600;
@@ -267,7 +269,7 @@ a.banner-button {
   margin-top: 5vh;
   text-decoration: none;
   border: solid 2px var(--light-color);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 /* SERVICES SECTION */
@@ -372,20 +374,15 @@ div.card-text {
 /*CTA */
 
 #cta-section {
-  width: 100%;
   background-size: cover;
   background-image: url("../assets/photos/geometric-wallpaper.webp");  
   display: flex;
-  justify-content: center;
-  align-items: center; 
+  justify-content: center; 
 }
 
 #cta-section div.banner {
-  height: 100%;
-  width: 72%;
-  box-sizing: border-box;
-  justify-self: start;
-  padding-inline: 0px;
+  margin-inline:var(--margin);
+  padding-inline: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,14 +397,6 @@ div.card-text {
 
 }
 
-#cta-section .banner-button {
-  width: 381px;
-  line-height: 55px;
-  font-size: 24px;
-  color: var(--dark-red);
-  background-color: var(--light-color) ;
-}
-
 /* FOOTER */
 
 footer {
@@ -417,19 +406,22 @@ footer {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 145px;
+  align-content: center;
+  justify-content: center;
+  padding: var(--margin);
   flex-wrap: wrap-reverse;
-  gap: 36px;
+  column-gap: 15vw;
+  row-gap: 55px;
 }
 .footer-content {
-  width: 188px;
+  width: 38vw;
+  min-width: 250px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   justify-items: center;
-  text-align: start;
+  text-align: center;
   color: var(--light-color);
 }
 
@@ -451,9 +443,13 @@ h3.footer-text{
   height: 2rem;
 }
 
-footer.logo {
-  width: 145px;
+footer .logo {
+  width: 30vw;
+  min-width: 220px;
+  height: fit-content;
+  display: flex;
 }
+
 /* PROJECTS SECTION */
 /* .projects-content {
   display: flex;

@@ -2,6 +2,11 @@
   div.desktop-nav {
     display: none;
   }
+
+  #nav-bar .logo {
+    width: 90px;
+  }
+
   div.hamburger-nav {
     display: flex;
   }
@@ -15,9 +20,7 @@
   html {
     --margin: 30px;
   }
-  #nav-bar .logo {
-    width: 90px;
-  }
+
   section#hero{
     justify-content: space-between;
     gap: 10vh;
@@ -32,6 +35,7 @@
   #top-banner {
     background-color: transparent;    
   }
+  
   #side-banner {
     display: none;
   }
