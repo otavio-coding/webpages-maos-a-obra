@@ -6,7 +6,6 @@ html {
   --dark-red: #BF2826;
   --light-color: #fffded;
   --dark-gray: #534747;
-  --dark-gray: #6b6060;
 }
 
 *{
@@ -401,51 +400,59 @@ div.card-text {
 
 footer {
   background-color: var(--dark-gray);
-  height: 546px;
+  height: fit-content;
+  min-height: 90vh;
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: center;
+  align-content: start;
+  justify-content: space-evenly;
   padding: var(--margin);
-  flex-wrap: wrap-reverse;
-  column-gap: 15vw;
+  column-gap: 3vw;
   row-gap: 55px;
+  padding-block-start: 90px;
+  padding-block-end: 250px;
 }
+
 .footer-content {
-  width: 38vw;
-  min-width: 250px; 
+  width: 20vw;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-  text-align: center;
+  justify-content: space-between;
+  text-align: start;
+  gap: 10vh;
   color: var(--light-color);
+}
+
+.footer-content *{
+  width: 100%;
 }
 
 h4.footer-text{
   font-weight: 500;
-  margin-top: 0px;
+  margin-block: 0px;
 }
 
 h3.footer-text{
-  margin-top: 0px;
+  margin-block: 0px;
 }
 .footer-icons  {
   display: flex;
+  justify-content: center ;
   gap: 2rem;
 }
 
-.footer-icons img {
+.footer-icons a {
   width: 2rem;
   height: 2rem;
 }
 
 footer .logo {
-  width: 30vw;
-  min-width: 220px;
+  width: 15vw;
+  min-width: 150px;
   height: fit-content;
   display: flex;
 }
