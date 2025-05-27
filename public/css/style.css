@@ -4,6 +4,7 @@ html {
   --padding: 5vh;
   --regular-red: #E51A17;
   --dark-red: #BF2826;
+  --light-color-2: #fffaface;
   --light-color: #fffded;
   --dark-gray: #534747;
 }
@@ -358,7 +359,7 @@ div.card-text {
   color: var(--dark-gray);
 }
 
-.card-text a {
+.card-text .more-button {
   font-size: 20px;
   color: var(--dark-red);
   width: 100%;
@@ -368,6 +369,7 @@ div.card-text {
   text-decoration-color: var(--dark-red);
   display: flex;
   justify-content: flex-end;
+  display: none; /* Comment this line to switch the button back on. */
 }
 
 /*CTA */
@@ -424,7 +426,7 @@ footer {
   justify-content: space-between;
   text-align: start;
   gap: 10vh;
-  color: var(--light-color);
+  color: var(--light-color-2);
 }
 
 .footer-content *{
@@ -456,32 +458,3 @@ footer .logo {
   height: fit-content;
   display: flex;
 }
-
-/* PROJECTS SECTION */
-/* .projects-content {
-  display: flex;
-  flex-direction: row;
-  height: 75vh;
-}
-
-.projects-text {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-grid {
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0;
-  height: 100%;
-}
-
-.image-grid img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-} */
